@@ -338,7 +338,7 @@ module.exports = class ApiGateway {
         // Payload processing
         const encoding = detectEncoding(request);
 
-        request.payload = request.payload && request.payload.toString(encoding);
+        request.payload = request.payload && request.payload;//.toString(encoding);
         request.rawPayload = request.payload;
 
         // Headers processing
